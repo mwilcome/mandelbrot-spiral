@@ -6,10 +6,12 @@ This project is a dynamic visualization of the Mandelbrot set, implemented using
 
 The Mandelbrot set is defined by iterating the function \( z_{n+1} = z_n^2 + c \) for complex numbers \( c \), where points remain bounded if the magnitude of \( z \) stays below 2. This implementation maps each pixel to a complex plane coordinate, computes its escape time, and applies a color gradient to reveal the set’s structure. The animation spirals toward the point \(-0.75 + 0.1i\), a region rich with spiral formations, enhancing the visual impact.
 
-### Screenshot
-Below is a static representation of the visualization:
+### Screenshots
+Below are some representations of the visualization:
 
-![Mandelbrot Spiral Screenshot](mandelbrot-screenshot.png)
+![Mandelbrot Spiral Screenshot](mandelbrot-1.gif)
+
+![Mandelbrot Zoom Screenshot](mandelbrot-2.gif)
 
 ## Technical Details
 
