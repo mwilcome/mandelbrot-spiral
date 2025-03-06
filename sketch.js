@@ -10,9 +10,9 @@ let initialScale = 1.5; // Half-width of the initial view
 let c0Re = -0.75; // Target point (real part), near the "seahorse valley"
 let c0Im = 0.1;   // Target point (imaginary part)
 let r0 = 0.75;    // Initial radius of spiral
-let k = 0.02;     // Increased zoom speed
-let omega = 0.15; // Slightly increased angular speed
-let speed = 0.01; // Animation speed
+let k = 0.2;      // Significantly increased zoom speed (was 0.05)
+let omega = 0.15; // Angular speed
+let speed = 0.1;  // Significantly increased animation speed (was 0.03)
 
 function setup() {
   createCanvas(width, height);
@@ -70,9 +70,3 @@ function draw() {
   }
   updatePixels();
 }
-
-function keyPressed() {
-    if (key == 's') {
-      saveGif('myAnimation', 5); // Saves 5 seconds of animation, in case you want to capture it yourself~
-    }
-  }
